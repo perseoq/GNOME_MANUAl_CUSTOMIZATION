@@ -153,9 +153,9 @@ El registro se conserva como documentación interna. No se publica dentro del ma
 
 ---
 
-## 10. Evidencia de las fases 3 y 4
+## 10. Evidencia de las fases 3 a 5
 
-Las pruebas de los capítulos 1 a 4 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado.
+Las pruebas de los capítulos 1 a 6 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado.
 
 | Caso | Resultado |
 | :--- | :--- |
@@ -165,13 +165,19 @@ Las pruebas de los capítulos 1 a 4 se ejecutaron en una instancia anidada de GN
 | Indicador de panel | Estado `ACTIVE`; log `indicador añadido` y `indicador eliminado` |
 | `stylesheet.css` válido | Sin errores de parseo; extensión activa |
 | `stylesheet.css` con llave sin cerrar | `Gio.IOErrorEnum: Error parsing stylesheet ... errcode:15` |
+| GSettings con color | Cambio en vivo; log `color aplicado: #3584e4` y `#e66100` |
+| `prefs.js` | El proceso de preferencias se inició sin errores JS; pendiente revisión visual |
+| Meta y espacios | Ventana movida de espacio; log `move 0 -> 1` y `after=1` |
+| Acción de menú | `menu.addAction` registrada sin errores |
 | Uso de `imports.*` | `SyntaxError: import declarations may only appear at top level of a module` |
 | Ruta con `Shell` en mayúscula | `ImportError: Unable to load file from: resource:///org/gnome/Shell/ui/main.js` |
 | Falta de `export default` | `TypeError: extensionModule.default is not a constructor` |
 | `metadata.json` con coma final | `Failed to parse metadata.json: SyntaxError: JSON.parse` |
 | Biblioteca GI inexistente | `Typelib file for namespace 'NoExiste' ... not found` |
+| `settings-schema` ausente | `Expected type string for argument 'schema_id' but got type undefined` |
+| Esquema no encontrado | `Schema org.gnome.shell.extensions.miprimeraextension could not be found...` |
 
-Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 4.
+Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 6.
 
 ## 11. Limitaciones
 
@@ -189,3 +195,4 @@ Los mensajes completos se transcriben en las secciones de errores de los capítu
 | 2026-10-19 | Entorno y protocolo iniciales de la fase 1 | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 1 y 2 (fase 3) | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 3 y 4 (fase 4) | Equipo del manual |
+| 2026-10-19 | Evidencia de pruebas de los capítulos 5 y 6 (fase 5) | Equipo del manual |

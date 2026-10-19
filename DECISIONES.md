@@ -64,6 +64,8 @@ manual/01-arquitectura.md    Capítulo 1: arquitectura
 manual/02-modulos.md         Capítulo 2: módulos
 manual/03-interfaz.md        Capítulo 3: interfaz
 manual/04-css.md             Capítulo 4: estilos
+manual/05-persistencia.md    Capítulo 5: preferencias
+manual/06-sistema.md         Capítulo 6: Meta y espacios
 ```
 
 Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
@@ -90,3 +92,4 @@ Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlaz
 | 2026-10-19 | Capítulo Introductorio redactado (fase 2); pendiente de prueba con lector novel | Equipo del manual |
 | 2026-10-19 | Capítulos 1 y 2 redactados (fase 3); pendientes de prueba con lector novel | Equipo del manual |
 | 2026-10-19 | Capítulos 3 y 4 redactados (fase 4); pendientes de prueba con lector novel | Equipo del manual |
+| 2026-10-19 | Capítulos 5 y 6 redactados (fase 5); pendientes de prueba con lector novel | Equipo del manual |

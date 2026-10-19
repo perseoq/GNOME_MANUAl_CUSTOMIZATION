@@ -141,6 +141,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Implementar configuraciones persistentes y una ventana de preferencias nativa.
 
+**Capítulo completo:** [Leer el Capítulo 5](manual/05-persistencia.md)
+
 **5.1. GSettings: creación manual del esquema XML**
 - 5.1.1. Convención de ID y path: `org.gnome.shell.extensions.*` 
 - 5.1.2. Definición de claves: tipos `b`, `i`, `s` y valores por defecto
@@ -164,6 +166,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 ## Capítulo 6: Interacción con el Sistema (Meta y Mutter)
 
 **Objetivo:** Controlar ventanas, espacios de trabajo y eventos globales.
+
+**Capítulo completo:** [Leer el Capítulo 6](manual/06-sistema.md)
 
 **6.1. El objeto `global` y el acceso a Mutter**
 - 6.1.1. `global.display` y `global.workspace_manager`
