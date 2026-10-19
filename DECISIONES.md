@@ -47,7 +47,7 @@ Ninguna decisión de este archivo puede contradecir `RULES.md`. Si una excepció
 
 ## 3. Estructura de archivos
 
-Mientras el manual no tenga capítulos redactados, los documentos de producción viven en la raíz del repositorio:
+Los documentos de producción viven en la raíz del repositorio. Los capítulos redactados se guardan en `manual/`:
 
 ```text
 AGENT.md                 Especificación pedagógica
@@ -59,9 +59,10 @@ ENTORNO-PRUEBAS.md       Entorno y protocolo de pruebas
 PLANTILLA-CAPITULO.md    Plantilla de capítulo
 CHECKLIST-CALIDAD.md     Lista de verificación
 README.md                Presentación del repositorio
+manual/00-introductorio.md  Capítulo Introductorio completo
 ```
 
-Cuando empiece la redacción, los capítulos se crearán en `manual/` y `MANUAL.md` seguirá siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
+Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
 
 ---
 
@@ -82,3 +83,4 @@ Cuando empiece la redacción, los capítulos se crearán en `manual/` y `MANUAL.
 | Fecha | Cambio | Autor |
 | :--- | :--- | :--- |
 | 2026-10-19 | Decisiones iniciales de la fase 1 | Equipo del manual |
+| 2026-10-19 | Capítulo Introductorio redactado (fase 2); pendiente de prueba con lector novel | Equipo del manual |

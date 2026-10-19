@@ -8,7 +8,9 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 
 ## Estado actual
 
-**Fase 1: Preparación** implementada, pendiente de revisión del autor. El manual todavía no tiene capítulos redactados; el repositorio contiene el índice, las reglas de producción y las herramientas de trabajo.
+**Fase 1: Preparación** implementada, pendiente de revisión del autor.
+
+**Fase 2: Capítulo Introductorio** redactado, pendiente de la prueba con un lector novel. El resto de capítulos todavía no está redactado.
 
 ---
 
@@ -17,6 +19,7 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 | Archivo | Función |
 | :--- | :--- |
 | `MANUAL.md` | Índice del manual y punto de entrada del lector |
+| `manual/00-introductorio.md` | Capítulo Introductorio completo |
 | `RULES.md` | Reglas obligatorias de producción |
 | `AGENT.md` | Especificación pedagógica y procedimiento de trabajo |
 | `PERFIL-LECTOR.md` | Perfil y vacíos del lector objetivo |

@@ -36,6 +36,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Criterio de salida:** El lector sabe abrir una terminal, crear un archivo de texto, guardarlo en una ruta concreta y explicar con sus palabras qué es una extensión.
 
+**Capítulo completo:** [Leer el Capítulo Introductorio](manual/00-introductorio.md)
+
 ## Capítulo 1: Arquitectura y Fundamentos del Shell
 
 **Objetivo:** Comprender el entorno de ejecución, el sistema de módulos ESM y el contrato de ciclo de vida de una extensión.
