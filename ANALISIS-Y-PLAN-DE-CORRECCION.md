@@ -30,7 +30,7 @@ Además, hay que verificar el empaquetado del esquema GSettings del Capítulo 10
 | **Pruebas con lector novel** | La Regla 10 exige probar cada capítulo con una persona sin experiencia. No hay informes de atasco. `README.md:13-23` reconoce que todas las fases están “pendientes de la prueba con un lector novel”. |
 | **Cierre de calidad** | `CHECKLIST-CALIDAD.md` tiene 78 casillas y ninguna marcada. No hay una ficha de cierre por capítulo ni firma de fase. |
 | **Capturas e imágenes** | No hay ninguna imagen en el repositorio (`![...]` = 0). El Capítulo 0 pedía captura del escritorio, y `AGENT.md` y `ENTORNO-PRUEBAS.md` hablan de capturas. Para el público objetivo es una carencia importante. |
-| **Capítulo 8 sin verificar** | `manual/08-c.md:118` dice “este capítulo no compila una biblioteca” y `ENTORNO-PRUEBAS.md:179` confirma que no se compiló. No hay código C real, solo explicación y un `import` de JS. Si se prometió una “librería C mínima”, falta; si el alcance es conceptual, hay que corregir la promesa en `AGENT.md` y `MANUAL.md`. |
+| **Capítulo 8 sin verificar** | `docs/08-c.md:118` dice “este capítulo no compila una biblioteca” y `ENTORNO-PRUEBAS.md:179` confirma que no se compiló. No hay código C real, solo explicación y un `import` de JS. Si se prometió una “librería C mínima”, falta; si el alcance es conceptual, hay que corregir la promesa en `AGENT.md` y `MANUAL.md`. |
 
 ---
 
@@ -48,9 +48,9 @@ Tienen código y secciones de errores, pero la estructura no coincide con la pla
 
 ### 3.2. Hay bloques sin código
 
-- `manual/05-persistencia.md:598`: “Bloque 4: crear la ventana de preferencias” solo remite a la sección 5.3; no muestra el bloque.
-- `manual/09-apis.md:513`: “Bloque 1: crear el proveedor” solo remite a 9.3.1.
-- `manual/10-empaquetado.md:314`: “Bloque 1: revisar el metadata” no incluye bloque de código.
+- `docs/05-persistencia.md:598`: “Bloque 4: crear la ventana de preferencias” solo remite a la sección 5.3; no muestra el bloque.
+- `docs/09-apis.md:513`: “Bloque 1: crear el proveedor” solo remite a 9.3.1.
+- `docs/10-empaquetado.md:314`: “Bloque 1: revisar el metadata” no incluye bloque de código.
 
 El código sí existe en el capítulo, pero no se presenta como bloque autónomo, y el lector no puede copiar el bloque completo tal como exige la Regla 11.
 
@@ -82,8 +82,8 @@ La Regla 12 exige una sección por bloque o comando. Hay bastantes bloques sin e
 
 La Regla 9 exige transcribir el mensaje real de `journalctl` o Looking Glass. Varias entradas usan descripciones genéricas o síntomas visuales, por ejemplo:
 
-- `manual/03-interfaz.md:148`: “el botón se ve, pero no tiene icono”.
-- `manual/05-persistencia.md:466`: “el archivo se genera, pero la extensión no lo encuentra”.
+- `docs/03-interfaz.md:148`: “el botón se ve, pero no tiene icono”.
+- `docs/05-persistencia.md:466`: “el archivo se genera, pero la extensión no lo encuentra”.
 
 No siempre hay log textual ni corrección con el log posterior.
 
@@ -97,7 +97,7 @@ No siempre hay log textual ni corrección con el log posterior.
 
 ### 4.1. Empaquetado del esquema GSettings
 
-El Capítulo 10 afirma que el ZIP debe incluir el XML y **no** `gschemas.compiled` (`manual/10-empaquetado.md:121-123,186-190`) y que `gnome-extensions pack` incluye el XML (`:353`). Hay que comprobar el comportamiento real:
+El Capítulo 10 afirma que el ZIP debe incluir el XML y **no** `gschemas.compiled` (`docs/10-empaquetado.md:121-123,186-190`) y que `gnome-extensions pack` incluye el XML (`:353`). Hay que comprobar el comportamiento real:
 
 - `gnome-extensions pack` detecta automáticamente la carpeta `schemas/`.
 - Esa herramienta compila el esquema con `glib-compile-schemas`.
@@ -107,15 +107,15 @@ Si es así, el comando y el listado esperado del capítulo no coinciden con lo q
 
 ### 4.2. Requisito contradictorio del Capítulo 9
 
-- `manual/09-apis.md:20` dice “Haber completado los capítulos 1 a 8”.
-- `manual/apendices/MAPA-PREREQUISITOS.md:16` dice que el Capítulo 9 requiere “Capítulos 1 a 7”.
+- `docs/09-apis.md:20` dice “Haber completado los capítulos 1 a 8”.
+- `docs/apendices/MAPA-PREREQUISITOS.md:16` dice que el Capítulo 9 requiere “Capítulos 1 a 7”.
 - El Capítulo 8 es opcional.
 
 Debería decir “1 a 7” o “1 a 7, y opcionalmente 8”.
 
 ### 4.3. `console.log` en el código final
 
-La Regla 3 pide no usar `console.log` como única depuración en el código final. El Capítulo 9 mantiene `console.log` en el código final (`manual/09-apis.md:611` y `894`). No es el único mecanismo, pero el Capítulo 10 no lo retira.
+La Regla 3 pide no usar `console.log` como única depuración en el código final. El Capítulo 9 mantiene `console.log` en el código final (`docs/09-apis.md:611` y `894`). No es el único mecanismo, pero el Capítulo 10 no lo retira.
 
 ### 4.4. El título del Capítulo 9 promete más de lo que entrega
 
@@ -123,7 +123,7 @@ La Regla 3 pide no usar `console.log` como única depuración en el código fina
 
 ### 4.5. La `url` del metadata final apunta al repositorio del manual
 
-`manual/10-empaquetado.md:65` usa `https://github.com/perseoq/GNOME_MANUAl_CUSTOMIZATION` como URL de la extensión. Para EGO debería ser la URL del proyecto de la extensión del lector. Es un ejemplo que puede confundir.
+`docs/10-empaquetado.md:65` usa `https://github.com/perseoq/GNOME_MANUAl_CUSTOMIZATION` como URL de la extensión. Para EGO debería ser la URL del proyecto de la extensión del lector. Es un ejemplo que puede confundir.
 
 ---
 
@@ -296,9 +296,9 @@ No basta con renombrar títulos: cada bloque debe tener delante una frase que di
 
 ### 8.2. Añadir el código que falta en los bloques
 
-- **Capítulo 5, Bloque 4** (`manual/05-persistencia.md:598`): insertar el `prefs.js` completo, con imports, clase, página, grupo, fila, `Gtk.Entry` y `settings.bind()`. Ahora solo remite a la sección 5.3.
-- **Capítulo 9, Bloque 1** (`manual/09-apis.md:513`): insertar el código completo de `providers/binanceProvider.js` dentro del bloque, no solo la referencia a 9.3.1.
-- **Capítulo 10, Bloque 1** (`manual/10-empaquetado.md:314`): insertar el `metadata.json` final como bloque de código.
+- **Capítulo 5, Bloque 4** (`docs/05-persistencia.md:598`): insertar el `prefs.js` completo, con imports, clase, página, grupo, fila, `Gtk.Entry` y `settings.bind()`. Ahora solo remite a la sección 5.3.
+- **Capítulo 9, Bloque 1** (`docs/09-apis.md:513`): insertar el código completo de `providers/binanceProvider.js` dentro del bloque, no solo la referencia a 9.3.1.
+- **Capítulo 10, Bloque 1** (`docs/10-empaquetado.md:314`): insertar el `metadata.json` final como bloque de código.
 - Revisar todos los bloques que solo dicen “usa el código de la sección X”: si el lector tiene que buscar en otra sección, el bloque no es autónomo.
 
 ### 8.3. Restaurar la autonomía de los capítulos 5, 6 y 9

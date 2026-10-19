@@ -2,7 +2,7 @@
 
 Este índice comienza con un Capítulo Introductorio para lectores sin experiencia previa. Después integra JavaScript, CSS, las posibilidades de intervención desde C/C++ (mediante GObject Introspection) y el capítulo dedicado al consumo de APIs externas. Está estructurado para cubrir desde los cimientos hasta las técnicas más avanzadas de modificación manual.
 
-**Índice navegable:** [manual/index.md](manual/index.md). Allí encontrarás la tabla de contenidos con enlaces directos a cada capítulo y a cada sección.
+**Índice navegable:** [docs/index.md](docs/index.md). Allí encontrarás la tabla de contenidos con enlaces directos a cada capítulo y a cada sección.
 
 
 ## Capítulo Introductorio: Antes de Empezar
@@ -38,13 +38,13 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Criterio de salida:** El lector sabe abrir una terminal, crear un archivo de texto, guardarlo en una ruta concreta y explicar con sus palabras qué es una extensión.
 
-**Capítulo completo:** [Leer el Capítulo Introductorio](manual/00-introductorio.md)
+**Capítulo completo:** [Leer el Capítulo Introductorio](docs/00-introductorio.md)
 
 ## Capítulo 1: Arquitectura y Fundamentos del Shell
 
 **Objetivo:** Comprender el entorno de ejecución, el sistema de módulos ESM y el contrato de ciclo de vida de una extensión.
 
-**Capítulo completo:** [Leer el Capítulo 1](manual/01-arquitectura.md)
+**Capítulo completo:** [Leer el Capítulo 1](docs/01-arquitectura.md)
 
 **1.1. El entorno GJS y la migración obligatoria a ESM**
 - 1.1.1. Qué es GJS: SpiderMonkey + GObject Introspection 
@@ -66,7 +66,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Dominar la importación correcta de librerías del sistema y los módulos internos del shell.
 
-**Capítulo completo:** [Leer el Capítulo 2](manual/02-modulos.md)
+**Capítulo completo:** [Leer el Capítulo 2](docs/02-modulos.md)
 
 **2.1. Importación de librerías GI con `gi://`**
 - 2.1.1. Las librerías esenciales: `Clutter`, `St`, `Meta`, `Shell`, `Gio`, `GLib` 
@@ -86,7 +86,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Crear elementos visuales en el escritorio sin usar GTK.
 
-**Capítulo completo:** [Leer el Capítulo 3](manual/03-interfaz.md)
+**Capítulo completo:** [Leer el Capítulo 3](docs/03-interfaz.md)
 
 **3.1. La separación de motores: St/Clutter vs. GTK4**
 - 3.1.1. Por qué GTK nunca se importa en `extension.js` 
@@ -111,7 +111,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Controlar la apariencia de los actores de St mediante CSS, comprendiendo sus limitaciones y prioridades.
 
-**Capítulo completo:** [Leer el Capítulo 4](manual/04-css.md)
+**Capítulo completo:** [Leer el Capítulo 4](docs/04-css.md)
 
 **4.1. Naturaleza y carga de `stylesheet.css`**
 - 4.1.1. Detección automática por convención de nombre
@@ -143,7 +143,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Implementar configuraciones persistentes y una ventana de preferencias nativa.
 
-**Capítulo completo:** [Leer el Capítulo 5](manual/05-persistencia.md)
+**Capítulo completo:** [Leer el Capítulo 5](docs/05-persistencia.md)
 
 **5.1. GSettings: creación manual del esquema XML**
 - 5.1.1. Convención de ID y path: `org.gnome.shell.extensions.*` 
@@ -169,7 +169,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Controlar ventanas, espacios de trabajo y eventos globales.
 
-**Capítulo completo:** [Leer el Capítulo 6](manual/06-sistema.md)
+**Capítulo completo:** [Leer el Capítulo 6](docs/06-sistema.md)
 
 **6.1. El objeto `global` y el acceso a Mutter**
 - 6.1.1. `global.display` y `global.workspace_manager`
@@ -193,7 +193,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Modificar el comportamiento interno del shell y solucionar errores de forma sistemática.
 
-**Capítulo completo:** [Leer el Capítulo 7](manual/07-monkey-patching.md)
+**Capítulo completo:** [Leer el Capítulo 7](docs/07-monkey-patching.md)
 
 **7.1. Monkey Patching: qué es y cuándo usarlo**
 - 7.1.1. El patrón seguro: guardar original, sobrescribir, restaurar en `disable()`
@@ -217,7 +217,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Comprender cómo el código C/C++ se expone a GJS y cuándo es necesario (o no) escribir código nativo.
 
-**Capítulo completo:** [Leer el Capítulo 8](manual/08-c.md)
+**Capítulo completo:** [Leer el Capítulo 8](docs/08-c.md)
 
 **8.1. El modelo de GObject Introspection**
 - 8.1.1. Cómo GJS accede a librerías C: anotaciones GI y typelib 
@@ -242,7 +242,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Construir extensiones que obtengan datos de Internet usando las APIs nativas de GNOME (Soup 3) y muestren la información en el panel.
 
-**Capítulo completo:** [Leer el Capítulo 9](manual/09-apis.md)
+**Capítulo completo:** [Leer el Capítulo 9](docs/09-apis.md)
 
 **9.1. El cliente HTTP nativo: Soup 3**
 - 9.1.1. Importación: `import Soup from 'gi://Soup?version=3.0'` 
@@ -281,7 +281,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Preparar la extensión para uso diario o distribución pública.
 
-**Capítulo completo:** [Leer el Capítulo 10](manual/10-empaquetado.md)
+**Capítulo completo:** [Leer el Capítulo 10](docs/10-empaquetado.md)
 
 **10.1. Verificación de metadatos**
 - 10.1.1. `"shell-version": ["50"]`: se declara la versión mayor; 50.6 es la versión puntual usada para probar
@@ -304,9 +304,9 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 ## Apéndices
 
-- [Glosario](manual/apendices/GLOSARIO.md)
-- [Mapa de prerrequisitos](manual/apendices/MAPA-PREREQUISITOS.md)
-- [Índice de soluciones](manual/apendices/SOLUCIONES.md)
+- [Glosario](docs/apendices/GLOSARIO.md)
+- [Mapa de prerrequisitos](docs/apendices/MAPA-PREREQUISITOS.md)
+- [Índice de soluciones](docs/apendices/SOLUCIONES.md)
 
 ## Resumen de Cobertura por Lenguaje/Tecnología
 

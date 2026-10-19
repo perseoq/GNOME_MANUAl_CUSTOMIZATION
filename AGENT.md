@@ -91,7 +91,7 @@ Todo manual para novatos absolutos debe comenzar con un **Capítulo 0: Antes de 
 
 **Criterio de salida del Capítulo 0:** El lector sabe abrir una terminal, crear un archivo de texto, guardarlo en una ruta concreta y explicar con sus palabras qué es una extensión.
 
-El capítulo redactado está en `manual/00-introductorio.md`.
+El capítulo redactado está en `docs/00-introductorio.md`.
 
 ---
 

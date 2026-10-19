@@ -29,21 +29,21 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 | Archivo | Función |
 | :--- | :--- |
 | `MANUAL.md` | Índice editorial detallado del manual |
-| `manual/index.md` | Índice navegable con enlaces a cada capítulo y sección |
-| `manual/00-introductorio.md` | Capítulo Introductorio completo |
-| `manual/01-arquitectura.md` | Capítulo 1: arquitectura y fundamentos |
-| `manual/02-modulos.md` | Capítulo 2: módulos y API interna |
-| `manual/03-interfaz.md` | Capítulo 3: interfaz con St y Clutter |
-| `manual/04-css.md` | Capítulo 4: estilos CSS en St |
-| `manual/05-persistencia.md` | Capítulo 5: GSettings y preferencias |
-| `manual/06-sistema.md` | Capítulo 6: Meta, ventanas y espacios |
-| `manual/07-monkey-patching.md` | Capítulo 7: monkey patching y depuración |
-| `manual/08-c.md` | Capítulo 8: C y GObject Introspection (opcional) |
-| `manual/09-apis.md` | Capítulo 9: APIs externas con Soup 3 |
-| `manual/10-empaquetado.md` | Capítulo 10: empaquetado y publicación |
-| `manual/apendices/GLOSARIO.md` | Glosario de términos |
-| `manual/apendices/MAPA-PREREQUISITOS.md` | Dependencias entre capítulos |
-| `manual/apendices/SOLUCIONES.md` | Índice de soluciones |
+| `docs/index.md` | Índice navegable con enlaces a cada capítulo y sección |
+| `docs/00-introductorio.md` | Capítulo Introductorio completo |
+| `docs/01-arquitectura.md` | Capítulo 1: arquitectura y fundamentos |
+| `docs/02-modulos.md` | Capítulo 2: módulos y API interna |
+| `docs/03-interfaz.md` | Capítulo 3: interfaz con St y Clutter |
+| `docs/04-css.md` | Capítulo 4: estilos CSS en St |
+| `docs/05-persistencia.md` | Capítulo 5: GSettings y preferencias |
+| `docs/06-sistema.md` | Capítulo 6: Meta, ventanas y espacios |
+| `docs/07-monkey-patching.md` | Capítulo 7: monkey patching y depuración |
+| `docs/08-c.md` | Capítulo 8: C y GObject Introspection (opcional) |
+| `docs/09-apis.md` | Capítulo 9: APIs externas con Soup 3 |
+| `docs/10-empaquetado.md` | Capítulo 10: empaquetado y publicación |
+| `docs/apendices/GLOSARIO.md` | Glosario de términos |
+| `docs/apendices/MAPA-PREREQUISITOS.md` | Dependencias entre capítulos |
+| `docs/apendices/SOLUCIONES.md` | Índice de soluciones |
 | `RULES.md` | Reglas obligatorias de producción |
 | `AGENT.md` | Especificación pedagógica y procedimiento de trabajo |
 | `PERFIL-LECTOR.md` | Perfil y vacíos del lector objetivo |

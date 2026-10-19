@@ -47,7 +47,7 @@ Ninguna decisión de este archivo puede contradecir `RULES.md`. Si una excepció
 
 ## 3. Estructura de archivos
 
-Los documentos de producción viven en la raíz del repositorio. Los capítulos redactados se guardan en `manual/`:
+Los documentos de producción viven en la raíz del repositorio. Los capítulos redactados se guardan en `docs/`:
 
 ```text
 AGENT.md                 Especificación pedagógica
@@ -59,21 +59,21 @@ ENTORNO-PRUEBAS.md       Entorno y protocolo de pruebas
 PLANTILLA-CAPITULO.md    Plantilla de capítulo
 CHECKLIST-CALIDAD.md     Lista de verificación
 README.md                Presentación del repositorio
-manual/00-introductorio.md  Capítulo Introductorio completo
-manual/01-arquitectura.md    Capítulo 1: arquitectura
-manual/02-modulos.md         Capítulo 2: módulos
-manual/03-interfaz.md        Capítulo 3: interfaz
-manual/04-css.md             Capítulo 4: estilos
-manual/05-persistencia.md    Capítulo 5: preferencias
-manual/06-sistema.md         Capítulo 6: Meta y espacios
-manual/07-monkey-patching.md Capítulo 7: monkey patching y depuración
-manual/08-c.md               Capítulo 8: C y GI (opcional)
-manual/09-apis.md            Capítulo 9: APIs externas
-manual/10-empaquetado.md     Capítulo 10: empaquetado
-manual/apendices/            Glosario, mapa y soluciones
+docs/00-introductorio.md  Capítulo Introductorio completo
+docs/01-arquitectura.md    Capítulo 1: arquitectura
+docs/02-modulos.md         Capítulo 2: módulos
+docs/03-interfaz.md        Capítulo 3: interfaz
+docs/04-css.md             Capítulo 4: estilos
+docs/05-persistencia.md    Capítulo 5: preferencias
+docs/06-sistema.md         Capítulo 6: Meta y espacios
+docs/07-monkey-patching.md Capítulo 7: monkey patching y depuración
+docs/08-c.md               Capítulo 8: C y GI (opcional)
+docs/09-apis.md            Capítulo 9: APIs externas
+docs/10-empaquetado.md     Capítulo 10: empaquetado
+docs/apendices/            Glosario, mapa y soluciones
 ```
 
-Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
+Los capítulos se crean en `docs/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
 
 ---
 
