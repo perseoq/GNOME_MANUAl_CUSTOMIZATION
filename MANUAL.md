@@ -2,6 +2,8 @@
 
 Este índice comienza con un Capítulo Introductorio para lectores sin experiencia previa. Después integra JavaScript, CSS, las posibilidades de intervención desde C/C++ (mediante GObject Introspection) y el capítulo dedicado al consumo de APIs externas. Está estructurado para cubrir desde los cimientos hasta las técnicas más avanzadas de modificación manual.
 
+**Índice navegable:** [manual/index.md](manual/index.md). Allí encontrarás la tabla de contenidos con enlaces directos a cada capítulo y a cada sección.
+
 
 ## Capítulo Introductorio: Antes de Empezar
 

@@ -28,7 +28,8 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 
 | Archivo | Función |
 | :--- | :--- |
-| `MANUAL.md` | Índice del manual y punto de entrada del lector |
+| `MANUAL.md` | Índice editorial detallado del manual |
+| `manual/index.md` | Índice navegable con enlaces a cada capítulo y sección |
 | `manual/00-introductorio.md` | Capítulo Introductorio completo |
 | `manual/01-arquitectura.md` | Capítulo 1: arquitectura y fundamentos |
 | `manual/02-modulos.md` | Capítulo 2: módulos y API interna |
