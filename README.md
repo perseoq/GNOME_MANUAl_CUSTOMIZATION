@@ -18,7 +18,9 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 
 **Fase 5: Capítulos 5 y 6** redactados, pendientes de la prueba con un lector novel.
 
-**Fase 6: Capítulos 7 y 8** redactados, pendientes de la prueba con un lector novel. El Capítulo 8 es opcional. Los capítulos 9 y 10 todavía no están redactados.
+**Fase 6: Capítulos 7 y 8** redactados, pendientes de la prueba con un lector novel. El Capítulo 8 es opcional.
+
+**Fase 7: Capítulos 9 y 10, apéndices** redactados. El manual está completo en contenido, pendiente de la prueba con lectores noveles y de la publicación final.
 
 ---
 
@@ -36,6 +38,11 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 | `manual/06-sistema.md` | Capítulo 6: Meta, ventanas y espacios |
 | `manual/07-monkey-patching.md` | Capítulo 7: monkey patching y depuración |
 | `manual/08-c.md` | Capítulo 8: C y GObject Introspection (opcional) |
+| `manual/09-apis.md` | Capítulo 9: APIs externas con Soup 3 |
+| `manual/10-empaquetado.md` | Capítulo 10: empaquetado y publicación |
+| `manual/apendices/GLOSARIO.md` | Glosario de términos |
+| `manual/apendices/MAPA-PREREQUISITOS.md` | Dependencias entre capítulos |
+| `manual/apendices/SOLUCIONES.md` | Índice de soluciones |
 | `RULES.md` | Reglas obligatorias de producción |
 | `AGENT.md` | Especificación pedagógica y procedimiento de trabajo |
 | `PERFIL-LECTOR.md` | Perfil y vacíos del lector objetivo |

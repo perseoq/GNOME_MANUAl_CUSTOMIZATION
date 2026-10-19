@@ -240,6 +240,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Construir extensiones que obtengan datos de Internet usando las APIs nativas de GNOME (Soup 3) y muestren la información en el panel.
 
+**Capítulo completo:** [Leer el Capítulo 9](manual/09-apis.md)
+
 **9.1. El cliente HTTP nativo: Soup 3**
 - 9.1.1. Importación: `import Soup from 'gi://Soup?version=3.0'` 
 - 9.1.2. Creación de `Soup.Session` y `Soup.Message`
@@ -252,7 +254,7 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 - 9.2.3. Extracción de campos anidados (ej. `data.main.temp`, `ticker.price`)
 
 **9.3. Patrón de diseño: proveedor de datos intercambiable**
-- 9.3.1. Separar la lógica de red en un módulo (`providers/weatherProvider.js`)
+- 9.3.1. Separar la lógica de red en un módulo (`providers/binanceProvider.js`)
 - 9.3.2. Interfaz común: `fetch()` que devuelve una Promesa con datos normalizados
 - 9.3.3. Ejemplo con fuentes sin clave (Open-Meteo, Binance) y una fuente con clave como variante opcional
 
@@ -277,12 +279,14 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Preparar la extensión para uso diario o distribución pública.
 
+**Capítulo completo:** [Leer el Capítulo 10](manual/10-empaquetado.md)
+
 **10.1. Verificación de metadatos**
 - 10.1.1. `"shell-version": ["50"]`: se declara la versión mayor; 50.6 es la versión puntual usada para probar
 - 10.1.2. El campo `version` lo gestiona extensions.gnome.org; el desarrollador no debe fijarlo y puede usar `version-name` para la versión visible
 
 **10.2. Empaquetado manual en ZIP**
-- 10.2.1. Contenido en la raíz del ZIP (`metadata.json`, `extension.js`, `prefs.js`, `stylesheet.css`, `schemas/`)
+- 10.2.1. Contenido en la raíz del ZIP (`metadata.json`, `extension.js`, `prefs.js`, `stylesheet.css`, `schemas/`, `providers/`)
 - 10.2.2. Exclusión de archivos innecesarios (`.git`, borradores, `node_modules`)
 
 **10.3. Criterios para la revisión de EGO**
@@ -295,6 +299,12 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 - 10.4.2. Persistencia de preferencias tras logout/login
 - 10.4.3. Verificación en Wayland (entorno por defecto en GNOME 50)
 
+
+## Apéndices
+
+- [Glosario](manual/apendices/GLOSARIO.md)
+- [Mapa de prerrequisitos](manual/apendices/MAPA-PREREQUISITOS.md)
+- [Índice de soluciones](manual/apendices/SOLUCIONES.md)
 
 ## Resumen de Cobertura por Lenguaje/Tecnología
 

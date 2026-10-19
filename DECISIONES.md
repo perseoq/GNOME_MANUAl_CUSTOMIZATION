@@ -68,6 +68,9 @@ manual/05-persistencia.md    Capítulo 5: preferencias
 manual/06-sistema.md         Capítulo 6: Meta y espacios
 manual/07-monkey-patching.md Capítulo 7: monkey patching y depuración
 manual/08-c.md               Capítulo 8: C y GI (opcional)
+manual/09-apis.md            Capítulo 9: APIs externas
+manual/10-empaquetado.md     Capítulo 10: empaquetado
+manual/apendices/            Glosario, mapa y soluciones
 ```
 
 Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
@@ -78,7 +81,7 @@ Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlaz
 
 | Decisión | Estado | Cuándo se resuelve |
 | :--- | :--- | :--- |
-| Licencia del manual | Pendiente | Antes de publicar la fase 7 |
+| Licencia del manual | Pendiente | Antes de publicar en EGO |
 | Distribución exacta que se documentará como referencia | Fedora 44 verificada; confirmar si se añade Ubuntu | Antes de publicar el manual |
 | Herramienta de capturas en Wayland | Pendiente | Antes de añadir capturas a los capítulos 3 y 4 |
 | Política de traducciones | Pendiente | Después de la fase 7 |
@@ -96,3 +99,4 @@ Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlaz
 | 2026-10-19 | Capítulos 3 y 4 redactados (fase 4); pendientes de prueba con lector novel | Equipo del manual |
 | 2026-10-19 | Capítulos 5 y 6 redactados (fase 5); pendientes de prueba con lector novel | Equipo del manual |
 | 2026-10-19 | Capítulos 7 y 8 redactados (fase 6); pendientes de prueba con lector novel | Equipo del manual |
+| 2026-10-19 | Capítulos 9 y 10 y apéndices redactados (fase 7); pendiente QA final y publicación | Equipo del manual |

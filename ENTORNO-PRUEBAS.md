@@ -155,9 +155,9 @@ El registro se conserva como documentación interna. No se publica dentro del ma
 
 ---
 
-## 10. Evidencia de las fases 3 a 6
+## 10. Evidencia de las fases 3 a 7
 
-Las pruebas de los capítulos 1 a 7 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado. El Capítulo 8 es conceptual y no se compiló en este entorno.
+Las pruebas de los capítulos 1 a 9 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado. El Capítulo 8 es conceptual y no se compiló en este entorno.
 
 | Caso | Resultado |
 | :--- | :--- |
@@ -172,6 +172,10 @@ Las pruebas de los capítulos 1 a 7 se ejecutaron en una instancia anidada de GN
 | Meta y espacios | Ventana movida de espacio; log `move 0 -> 1` y `after=1` |
 | Acción de menú | `menu.addAction` registrada sin errores |
 | Monkey patch de `overview.show` | Log `parche aplicado`, `overview.show interceptado` y `parche restaurado` |
+| Soup 3 y Binance | Petición real; log `precio actualizado: 81929.99` |
+| Panel con precio | Etiqueta `St.Label` añadida a un `St.BoxLayout`; sin errores |
+| Empaquetado | `gnome-extensions pack` generó el ZIP con `providers/` y `schemas/` |
+| Instalación del ZIP | `gnome-extensions install` instaló metadata, extension, prefs, schemas y providers |
 | Capítulo 8 | No compilado; faltan herramientas de desarrollo de GLib y Meson en el entorno |
 | Uso de `imports.*` | `SyntaxError: import declarations may only appear at top level of a module` |
 | Ruta con `Shell` en mayúscula | `ImportError: Unable to load file from: resource:///org/gnome/Shell/ui/main.js` |
@@ -181,7 +185,7 @@ Las pruebas de los capítulos 1 a 7 se ejecutaron en una instancia anidada de GN
 | `settings-schema` ausente | `Expected type string for argument 'schema_id' but got type undefined` |
 | Esquema no encontrado | `Schema org.gnome.shell.extensions.miprimeraextension could not be found...` |
 
-Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 7. El Capítulo 8 se verificó de forma conceptual.
+Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 9. El Capítulo 8 se verificó de forma conceptual.
 
 ## 11. Limitaciones
 
@@ -201,3 +205,4 @@ Los mensajes completos se transcriben en las secciones de errores de los capítu
 | 2026-10-19 | Evidencia de pruebas de los capítulos 3 y 4 (fase 4) | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 5 y 6 (fase 5) | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas del capítulo 7 y revisión conceptual del capítulo 8 (fase 6) | Equipo del manual |
+| 2026-10-19 | Evidencia de API, panel con precio y empaquetado (fase 7) | Equipo del manual |

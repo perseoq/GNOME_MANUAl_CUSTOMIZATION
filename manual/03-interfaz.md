@@ -223,7 +223,7 @@ Propiedades importantes:
 | Propiedad | Efecto |
 | :--- | :--- |
 | `vertical` | En `St.BoxLayout`, coloca los hijos en columna si es `true` |
-| `spacing` | Espacio entre hijos |
+| `spacing` (CSS) | Espacio entre hijos; se aplica con `style: 'spacing: 6px;'` |
 | `x_expand` | El hijo ocupa el espacio horizontal disponible |
 | `y_expand` | El hijo ocupa el espacio vertical disponible |
 | `x_align` | Alineación horizontal |
@@ -470,7 +470,7 @@ ImportError: Unable to load file from: resource:///org/gnome/shell/ui/panelmenu.
 ### Creativo
 
 1. Añade una etiqueta con el texto `Hola` al lado del icono.
-2. Pista: crea un `St.BoxLayout` horizontal con `spacing: 6`, añade el icono y la etiqueta, y coloca la caja dentro del botón.
+2. Pista: crea un `St.BoxLayout` horizontal con `style: 'spacing: 6px;'`, añade el icono y la etiqueta, y coloca la caja dentro del botón.
 3. Comprueba que el botón muestra icono y texto.
 4. Desactiva la extensión y comprueba que todo desaparece.
 5. Explica qué contenedor usaste y por qué.
@@ -584,7 +584,7 @@ Una solución válida crea una caja horizontal dentro de `enable()`:
 ```javascript
 const caja = new St.BoxLayout({
     vertical: false,
-    spacing: 6,
+    style: 'spacing: 6px;',
 });
 
 const icono = new St.Icon({
@@ -603,13 +603,19 @@ this._indicador.add_child(caja);
 
 **Errores posibles en este bloque:**
 
-**Error 1: la etiqueta no aparece.**
+**Error 1: `Error: No property spacing on StBoxLayout`.**
+- **Ubicación:** constructor de `St.BoxLayout`.
+- **Síntoma:** la extensión no carga.
+- **Causa:** pasaste `spacing` como propiedad GObject.
+- **Corrección:** usa `style: 'spacing: 6px;'`. Después de corregir, la caja se crea.
+
+**Error 2: la etiqueta no aparece.**
 - **Ubicación:** panel superior.
 - **Síntoma:** únicamente se ve el icono.
 - **Causa:** la etiqueta no se añadió a la caja o la caja no se añadió al botón.
 - **Corrección:** comprueba las dos llamadas `add_child`. Después de corregir, se ven el icono y el texto.
 
-**Error 2: el texto no se lee.**
+**Error 3: el texto no se lee.**
 - **Ubicación:** etiqueta del panel.
 - **Síntoma:** la etiqueta aparece, pero el color no contrasta con el fondo.
 - **Causa:** el color del texto y el fondo del botón son demasiado parecidos.
