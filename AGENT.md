@@ -123,7 +123,7 @@ boton.connect('clicked', () => {
 
 ### Paso 4: Estructura Fija de Cada Capítulo
 
-Cada capítulo del manual debe seguir esta plantilla sin excepción:
+Cada capítulo del manual debe seguir esta plantilla sin excepción. La versión lista para copiar está en `PLANTILLA-CAPITULO.md`.
 
 ````markdown
 # Capítulo N: [Título amigable, no técnico]
@@ -323,7 +323,7 @@ Cada capítulo se prueba antes de publicarse. El procedimiento es:
 
 **Criterio de éxito de los cimientos:** El lector novel construye la etapa 4 del proyecto (botón con CSS propio) sin asistencia y sabe explicar por qué funciona.
 
-**Registro:** el informe de la prueba se conserva como documentación interna del manual, con el capítulo, la frase exacta del atasco y la corrección aplicada. No se publica.
+**Registro:** el informe de la prueba se conserva como documentación interna del manual, con el capítulo, la frase exacta del atasco y la corrección aplicada. No se publica. La verificación se completa con `CHECKLIST-CALIDAD.md`.
 
 ---
 

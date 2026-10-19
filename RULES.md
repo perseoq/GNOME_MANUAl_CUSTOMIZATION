@@ -324,5 +324,4 @@ Estas reglas se aplican a:
 - Toda revisión, ampliación o corrección posterior a la publicación.
 - El cierre de cada fase del plan de producción, incluido el push al repositorio remoto.
 
-**Ninguna regla admite excepciones no documentadas. Si una excepción es necesaria, se documenta en este mismo archivo con su justificación, y solo el autor principal del manual puede aprobarla.**
-```
+**Ninguna regla admite excepciones no documentadas. Si una excepción es necesaria, se documenta en este mismo archivo con su justificación, y únicamente el autor principal del manual puede aprobarla.**

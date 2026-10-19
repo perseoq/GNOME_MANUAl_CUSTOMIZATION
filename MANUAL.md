@@ -1,6 +1,6 @@
 # Índice Detallado y Definitivo del Manual de Extensiones Nativas para GNOME Shell 50.6
 
-Este índice integra JavaScript, CSS, las posibilidades de intervención desde C/C++ (mediante GObject Introspection) y el nuevo capítulo dedicado al consumo de APIs externas. Está estructurado para cubrir desde los cimientos hasta las técnicas más avanzadas de modificación manual.
+Este índice comienza con un Capítulo Introductorio para lectores sin experiencia previa. Después integra JavaScript, CSS, las posibilidades de intervención desde C/C++ (mediante GObject Introspection) y el capítulo dedicado al consumo de APIs externas. Está estructurado para cubrir desde los cimientos hasta las técnicas más avanzadas de modificación manual.
 
 
 ## Capítulo Introductorio: Antes de Empezar
@@ -47,7 +47,7 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 
 **1.2. Estructura mínima de una extensión manual**
 - 1.2.1. El directorio `~/.local/share/gnome-shell/extensions/UUID/`
-- 1.2.2. `metadata.json`: campos obligatorios (`uuid`, `shell-version`, `settings-schema`) 
+- 1.2.2. `metadata.json`: campos obligatorios (`uuid`, `name`, `description`, `shell-version`); `settings-schema` es opcional y `url` es obligatorio para extensions.gnome.org (EGO)
 - 1.2.3. `extension.js`: la clase `Extension` y el `export default`
 
 **1.3. El contrato `enable()` / `disable()` y la gestión de memoria**
@@ -62,7 +62,7 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 
 **2.1. Importación de librerías GI con `gi://`**
 - 2.1.1. Las librerías esenciales: `Clutter`, `St`, `Meta`, `Shell`, `Gio`, `GLib` 
-- 2.1.2. La especificación de versión: `gi://Gtk?version=4.0` (solo en prefs)
+- 2.1.2. La especificación de versión: `gi://Gtk?version=4.0` (únicamente en prefs)
 
 **2.2. La trampa de las rutas `resource://`**
 - 2.2.1. En `extension.js`: `resource:///org/gnome/shell/ui/main.js` (minúscula) 
@@ -113,8 +113,9 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 
 **4.3. Propiedades CSS soportadas y no soportadas**
 - 4.3.1. Color, fondo, bordes, espaciado, tipografía
-- 4.3.2. Lo que St ignora: `display: flex`, `box-shadow`, transiciones CSS
-- 4.3.3. Estados (`:hover`, `:active`) y su funcionamiento limitado en St
+- 4.3.2. Lo que St no soporta igual que un navegador: `display: flex`, el modelo de caja de CSS y las transiciones arbitrarias
+- 4.3.3. Lo que St sí soporta: `box-shadow` y transiciones limitadas con `transition-duration` y `transition-timing-function`
+- 4.3.4. Estados (`:hover`, `:active`) y su funcionamiento limitado en St
 
 **4.4. Estilos en línea con `set_style()`**
 - 4.4.1. Prioridad máxima en la cascada de St 
@@ -205,7 +206,7 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 **8.2. Qué se puede lograr desde C/C++ que no es posible (o es difícil) en GJS puro**
 - 8.2.1. Librerías con requisitos de rendimiento intensivo
 - 8.2.2. Integración con APIs de bajo nivel del sistema no expuestas por GObject Introspection
-- 8.2.3. El caso de Mutter: `GnomeShellPlugin` como punto de entrada C del shell 
+- 8.2.3. El caso de Mutter: `GnomeShellPlugin` es un plugin nativo del compositor, no una extensión de GNOME Shell; queda fuera del alcance de este manual
 
 **8.3. Escribir una librería GObject consumible desde GJS (flujo de trabajo)**
 - 8.3.1. Anotaciones GI en cabeceras C (`(transfer none)`, `(transfer full)`)
@@ -235,20 +236,21 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 **9.3. Patrón de diseño: proveedor de datos intercambiable**
 - 9.3.1. Separar la lógica de red en un módulo (`providers/weatherProvider.js`)
 - 9.3.2. Interfaz común: `fetch()` que devuelve una Promesa con datos normalizados
-- 9.3.3. Ejemplo con múltiples fuentes (OpenWeatherMap, CoinGecko, exchangerate.host) 
+- 9.3.3. Ejemplo con fuentes sin clave (Open-Meteo, Binance) y una fuente con clave como variante opcional
 
 **9.4. Actualización periódica y gestión de errores**
 - 9.4.1. Temporizadores con `GLib.timeout_add_seconds()`
 - 9.4.2. Manejo de fallos de red: reintentos, timeouts, mensajes en el panel
 - 9.4.3. Cancelación de peticiones pendientes en `disable()` para evitar fugas
 
-**9.5. Almacenamiento seguro de claves de API**
+**9.5. Manejo de claves de API sin exponerlas**
 - 9.5.1. Nunca hardcodear claves en `extension.js`
-- 9.5.2. Uso de GSettings para que el usuario introduzca su clave en `prefs.js`
-- 9.5.3. Advertencia sobre la exposición de claves en código público
+- 9.5.2. Preferir APIs que no requieran clave para los ejemplos del manual
+- 9.5.3. GSettings no es almacenamiento seguro: dconf guarda los valores en texto plano; para una mayor protección, usar `libsecret` (Secret Service)
+- 9.5.4. Advertencia sobre la exposición de claves en código público y en repositorios
 
 **9.6. Ejemplo completo: indicador de criptomonedas**
-- 9.6.1. Petición a la API de CoinGecko o Binance 
+- 9.6.1. Petición a la API de Binance (endpoint público) o CoinGecko (con clave de prueba)
 - 9.6.2. Parseo del precio y actualización de un `St.Label` en el panel
 - 9.6.3. Menú desplegable con detalles adicionales y sparkline (opcional) 
 
@@ -258,8 +260,8 @@ Este índice integra JavaScript, CSS, las posibilidades de intervención desde C
 **Objetivo:** Preparar la extensión para uso diario o distribución pública.
 
 **10.1. Verificación de metadatos**
-- 10.1.1. `"shell-version": ["50"]` y versionado
-- 10.1.2. El campo `version` y su gestión por extensions.gnome.org
+- 10.1.1. `"shell-version": ["50"]`: se declara la versión mayor; 50.6 es la versión puntual usada para probar
+- 10.1.2. El campo `version` lo gestiona extensions.gnome.org; el desarrollador no debe fijarlo y puede usar `version-name` para la versión visible
 
 **10.2. Empaquetado manual en ZIP**
 - 10.2.1. Contenido en la raíz del ZIP (`metadata.json`, `extension.js`, `prefs.js`, `stylesheet.css`, `schemas/`)
