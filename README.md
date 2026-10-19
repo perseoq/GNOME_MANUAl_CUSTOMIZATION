@@ -10,7 +10,9 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 
 **Fase 1: Preparación** implementada, pendiente de revisión del autor.
 
-**Fase 2: Capítulo Introductorio** redactado, pendiente de la prueba con un lector novel. El resto de capítulos todavía no está redactado.
+**Fase 2: Capítulo Introductorio** redactado, pendiente de la prueba con un lector novel.
+
+**Fase 3: Capítulos 1 y 2** redactados, pendientes de la prueba con un lector novel. Los capítulos 3 a 10 todavía no están redactados.
 
 ---
 
@@ -20,6 +22,8 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 | :--- | :--- |
 | `MANUAL.md` | Índice del manual y punto de entrada del lector |
 | `manual/00-introductorio.md` | Capítulo Introductorio completo |
+| `manual/01-arquitectura.md` | Capítulo 1: arquitectura y fundamentos |
+| `manual/02-modulos.md` | Capítulo 2: módulos y API interna |
 | `RULES.md` | Reglas obligatorias de producción |
 | `AGENT.md` | Especificación pedagógica y procedimiento de trabajo |
 | `PERFIL-LECTOR.md` | Perfil y vacíos del lector objetivo |

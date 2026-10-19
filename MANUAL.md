@@ -42,6 +42,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Comprender el entorno de ejecución, el sistema de módulos ESM y el contrato de ciclo de vida de una extensión.
 
+**Capítulo completo:** [Leer el Capítulo 1](manual/01-arquitectura.md)
+
 **1.1. El entorno GJS y la migración obligatoria a ESM**
 - 1.1.1. Qué es GJS: SpiderMonkey + GObject Introspection 
 - 1.1.2. La sintaxis `import`/`export` y la prohibición de `imports.*` desde GNOME 45
@@ -61,6 +63,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 ## Capítulo 2: El Sistema de Módulos y la API Interna
 
 **Objetivo:** Dominar la importación correcta de librerías del sistema y los módulos internos del shell.
+
+**Capítulo completo:** [Leer el Capítulo 2](manual/02-modulos.md)
 
 **2.1. Importación de librerías GI con `gi://`**
 - 2.1.1. Las librerías esenciales: `Clutter`, `St`, `Meta`, `Shell`, `Gio`, `GLib` 

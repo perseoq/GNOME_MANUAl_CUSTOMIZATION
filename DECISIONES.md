@@ -60,6 +60,8 @@ PLANTILLA-CAPITULO.md    Plantilla de capítulo
 CHECKLIST-CALIDAD.md     Lista de verificación
 README.md                Presentación del repositorio
 manual/00-introductorio.md  Capítulo Introductorio completo
+manual/01-arquitectura.md    Capítulo 1: arquitectura
+manual/02-modulos.md         Capítulo 2: módulos
 ```
 
 Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlazado. No se crearán carpetas de etapas ni de ejemplos ejecutables.
@@ -71,7 +73,7 @@ Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlaz
 | Decisión | Estado | Cuándo se resuelve |
 | :--- | :--- | :--- |
 | Licencia del manual | Pendiente | Antes de publicar la fase 7 |
-| Distribución exacta que se documentará como referencia | Fedora 44 verificada; confirmar si se añade Ubuntu | Antes del Capítulo 1 |
+| Distribución exacta que se documentará como referencia | Fedora 44 verificada; confirmar si se añade Ubuntu | Antes de publicar el manual |
 | Herramienta de capturas en Wayland | Pendiente | Antes del Capítulo 3 |
 | Política de traducciones | Pendiente | Después de la fase 7 |
 | Protección de la rama `main` | Pendiente | Antes de aceptar colaboraciones externas |
@@ -84,3 +86,4 @@ Los capítulos se crean en `manual/` y `MANUAL.md` sigue siendo el índice enlaz
 | :--- | :--- | :--- |
 | 2026-10-19 | Decisiones iniciales de la fase 1 | Equipo del manual |
 | 2026-10-19 | Capítulo Introductorio redactado (fase 2); pendiente de prueba con lector novel | Equipo del manual |
+| 2026-10-19 | Capítulos 1 y 2 redactados (fase 3); pendientes de prueba con lector novel | Equipo del manual |
