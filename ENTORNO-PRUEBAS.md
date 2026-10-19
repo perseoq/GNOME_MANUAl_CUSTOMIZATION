@@ -90,6 +90,8 @@ journalctl /usr/bin/gnome-shell -n 200 -o cat > /tmp/gnome-shell-prueba.log
 
 `-n 200` muestra los últimos 200 mensajes. El archivo `/tmp/gnome-shell-prueba.log` es temporal y no se publica; el fragmento relevante se transcribe al manual.
 
+Los mensajes de la terminal pueden variar según la configuración regional. Por ejemplo, `orden no encontrada` e `instrucción no encontrada` expresan el mismo error. El manual conserva el texto de la prueba y explica el significado.
+
 ---
 
 ## 6. Looking Glass
@@ -153,9 +155,9 @@ El registro se conserva como documentación interna. No se publica dentro del ma
 
 ---
 
-## 10. Evidencia de las fases 3 a 5
+## 10. Evidencia de las fases 3 a 6
 
-Las pruebas de los capítulos 1 a 6 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado.
+Las pruebas de los capítulos 1 a 7 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado. El Capítulo 8 es conceptual y no se compiló en este entorno.
 
 | Caso | Resultado |
 | :--- | :--- |
@@ -169,6 +171,8 @@ Las pruebas de los capítulos 1 a 6 se ejecutaron en una instancia anidada de GN
 | `prefs.js` | El proceso de preferencias se inició sin errores JS; pendiente revisión visual |
 | Meta y espacios | Ventana movida de espacio; log `move 0 -> 1` y `after=1` |
 | Acción de menú | `menu.addAction` registrada sin errores |
+| Monkey patch de `overview.show` | Log `parche aplicado`, `overview.show interceptado` y `parche restaurado` |
+| Capítulo 8 | No compilado; faltan herramientas de desarrollo de GLib y Meson en el entorno |
 | Uso de `imports.*` | `SyntaxError: import declarations may only appear at top level of a module` |
 | Ruta con `Shell` en mayúscula | `ImportError: Unable to load file from: resource:///org/gnome/Shell/ui/main.js` |
 | Falta de `export default` | `TypeError: extensionModule.default is not a constructor` |
@@ -177,7 +181,7 @@ Las pruebas de los capítulos 1 a 6 se ejecutaron en una instancia anidada de GN
 | `settings-schema` ausente | `Expected type string for argument 'schema_id' but got type undefined` |
 | Esquema no encontrado | `Schema org.gnome.shell.extensions.miprimeraextension could not be found...` |
 
-Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 6.
+Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 7. El Capítulo 8 se verificó de forma conceptual.
 
 ## 11. Limitaciones
 
@@ -196,3 +200,4 @@ Los mensajes completos se transcriben en las secciones de errores de los capítu
 | 2026-10-19 | Evidencia de pruebas de los capítulos 1 y 2 (fase 3) | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 3 y 4 (fase 4) | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 5 y 6 (fase 5) | Equipo del manual |
+| 2026-10-19 | Evidencia de pruebas del capítulo 7 y revisión conceptual del capítulo 8 (fase 6) | Equipo del manual |

@@ -16,7 +16,9 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 
 **Fase 4: Capítulos 3 y 4** redactados, pendientes de la prueba con un lector novel.
 
-**Fase 5: Capítulos 5 y 6** redactados, pendientes de la prueba con un lector novel. Los capítulos 7 a 10 todavía no están redactados.
+**Fase 5: Capítulos 5 y 6** redactados, pendientes de la prueba con un lector novel.
+
+**Fase 6: Capítulos 7 y 8** redactados, pendientes de la prueba con un lector novel. El Capítulo 8 es opcional. Los capítulos 9 y 10 todavía no están redactados.
 
 ---
 
@@ -32,6 +34,8 @@ El manual está dirigido a personas que nunca han programado y que no conocen Ja
 | `manual/04-css.md` | Capítulo 4: estilos CSS en St |
 | `manual/05-persistencia.md` | Capítulo 5: GSettings y preferencias |
 | `manual/06-sistema.md` | Capítulo 6: Meta, ventanas y espacios |
+| `manual/07-monkey-patching.md` | Capítulo 7: monkey patching y depuración |
+| `manual/08-c.md` | Capítulo 8: C y GObject Introspection (opcional) |
 | `RULES.md` | Reglas obligatorias de producción |
 | `AGENT.md` | Especificación pedagógica y procedimiento de trabajo |
 | `PERFIL-LECTOR.md` | Perfil y vacíos del lector objetivo |

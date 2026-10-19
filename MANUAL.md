@@ -191,6 +191,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Modificar el comportamiento interno del shell y solucionar errores de forma sistemática.
 
+**Capítulo completo:** [Leer el Capítulo 7](manual/07-monkey-patching.md)
+
 **7.1. Monkey Patching: qué es y cuándo usarlo**
 - 7.1.1. El patrón seguro: guardar original, sobrescribir, restaurar en `disable()`
 - 7.1.2. Ejemplo: parchear un método de `Panel` o `Overview`
@@ -212,6 +214,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 ## Capítulo 8: Intervención desde C/C++ mediante GObject Introspection
 
 **Objetivo:** Comprender cómo el código C/C++ se expone a GJS y cuándo es necesario (o no) escribir código nativo.
+
+**Capítulo completo:** [Leer el Capítulo 8](manual/08-c.md)
 
 **8.1. El modelo de GObject Introspection**
 - 8.1.1. Cómo GJS accede a librerías C: anotaciones GI y typelib 
