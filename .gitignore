@@ -1,0 +1,39 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores y entornos de desarrollo
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporales, borradores y registros
+tmp/
+temp/
+borradores/
+*.tmp
+*.bak
+*.log
+
+# Secretos y configuración local
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Dependencias y artefactos de herramientas
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+
+# Extensiones empaquetadas y esquemas compilados
+*.zip
+gschemas.compiled
