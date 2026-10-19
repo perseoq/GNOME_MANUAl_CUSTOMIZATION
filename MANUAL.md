@@ -84,6 +84,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 
 **Objetivo:** Crear elementos visuales en el escritorio sin usar GTK.
 
+**Capítulo completo:** [Leer el Capítulo 3](manual/03-interfaz.md)
+
 **3.1. La separación de motores: St/Clutter vs. GTK4**
 - 3.1.1. Por qué GTK nunca se importa en `extension.js` 
 - 3.1.2. St como toolkit de widgets estilizables con CSS
@@ -106,6 +108,8 @@ Este índice comienza con un Capítulo Introductorio para lectores sin experienc
 ## Capítulo 4: El Sistema de Estilos CSS en St
 
 **Objetivo:** Controlar la apariencia de los actores de St mediante CSS, comprendiendo sus limitaciones y prioridades.
+
+**Capítulo completo:** [Leer el Capítulo 4](manual/04-css.md)
 
 **4.1. Naturaleza y carga de `stylesheet.css`**
 - 4.1.1. Detección automática por convención de nombre

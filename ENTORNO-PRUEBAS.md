@@ -153,22 +153,25 @@ El registro se conserva como documentación interna. No se publica dentro del ma
 
 ---
 
-## 10. Evidencia de la fase 3
+## 10. Evidencia de las fases 3 y 4
 
-Las pruebas de los capítulos 1 y 2 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado.
+Las pruebas de los capítulos 1 a 4 se ejecutaron en una instancia anidada de GNOME Shell 50.6 sobre Wayland, con un directorio de datos aislado.
 
 | Caso | Resultado |
 | :--- | :--- |
 | Extensión de la etapa 1 | Estado `ACTIVE`; log `activada` y `desactivada` |
 | Señal `window-created` | Conexión y desconexión sin errores |
 | Notificación con `Main.notify` | Extensión `ACTIVE`; sin errores en el log |
+| Indicador de panel | Estado `ACTIVE`; log `indicador añadido` y `indicador eliminado` |
+| `stylesheet.css` válido | Sin errores de parseo; extensión activa |
+| `stylesheet.css` con llave sin cerrar | `Gio.IOErrorEnum: Error parsing stylesheet ... errcode:15` |
 | Uso de `imports.*` | `SyntaxError: import declarations may only appear at top level of a module` |
 | Ruta con `Shell` en mayúscula | `ImportError: Unable to load file from: resource:///org/gnome/Shell/ui/main.js` |
 | Falta de `export default` | `TypeError: extensionModule.default is not a constructor` |
 | `metadata.json` con coma final | `Failed to parse metadata.json: SyntaxError: JSON.parse` |
 | Biblioteca GI inexistente | `Typelib file for namespace 'NoExiste' ... not found` |
 
-Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 y 2.
+Los mensajes completos se transcriben en las secciones de errores de los capítulos 1 a 4.
 
 ## 11. Limitaciones
 
@@ -185,3 +188,4 @@ Los mensajes completos se transcriben en las secciones de errores de los capítu
 | :--- | :--- | :--- |
 | 2026-10-19 | Entorno y protocolo iniciales de la fase 1 | Equipo del manual |
 | 2026-10-19 | Evidencia de pruebas de los capítulos 1 y 2 (fase 3) | Equipo del manual |
+| 2026-10-19 | Evidencia de pruebas de los capítulos 3 y 4 (fase 4) | Equipo del manual |
